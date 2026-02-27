@@ -6,8 +6,52 @@
 
 **OpenClaw** is a self-hosted AI agent framework that can execute commands, manage files, and perform tasks autonomously based on user instructions. This template deploys OpenClaw on Railway with minimal configuration, allowing you to run and access it remotely without managing servers. 🤖⚙️
 
+## 🚀 Quick Start Deployment Guide
 
-![OpenCrawl Setup Complete Page](src/public/setup page.png)
+### Step 1: Deploy on Railway
+
+1. Click the **"Deploy on Railway"** button at the top of this page &amp; wait for the initial deployment to complete (~3-5 minutes)
+
+### Step 2: Note Your Credentials
+
+Check the **Variables** tab and save following:
+
+- **SETUP_PASSWORD**: Your password for accessing the setup wizard
+
+⚠️ **Keep this secure!** You'll need this in the next steps.
+
+### Step 3: Access Setup Wizard
+
+1. Click on the URL provided by Railway in your project dashboard (e.g., `https://your-app-xyz.up.railway.app`)
+2. Login prompt appears:
+   - **Username**: Leave blank 
+   - **Password**: Enter your `SETUP_PASSWORD`
+
+### Step 4: Complete the Setup Wizard
+
+Once you log in, follow the intuitive 7-step guide on the left side of the setup screen to bring your AI agent online:
+
+![OpenCrawl Setup Page](https://raw.githubusercontent.com/praveen-ks-2001/openclaw-self-host-on-vps/refs/heads/dev/src/public/setup%20page.png)
+
+1. Select your **provider & auth type**, then paste your API key
+2. Add **channels** (optional — can be done later)
+3. Click **Run Setup**
+4. If you added a channel token, click **Authorize Channel** and enter the code
+   *(After setup, message your bot on the channel. It will reply with a pairing code. Enter that code here to grant DM access.)*
+5. Click **Launch Dashboard**
+6. First login? Click **Approve Pairing** → **Approve Latest Request**
+   *(New browsers need a one-time device approval. After clicking "Launch Dashboard", come back here, click "Approve Pairing", and approve the pending request.)*
+7. You should now see **Health: OK** in the OpenClaw UI.
+
+![Health Ok](https://res.cloudinary.com/asset-cloudinary/image/upload/v1772139788/health_ok_swgk94.png)
+
+### Step 5: Start Chatting
+
+1. Click **"Chat"** in the sidebar of the newly opened OpenClaw UI
+2. Type your first message
+3. Enjoy your self-hosted AI assistant! 🎉
+
+---
 
 
 ## About Hosting OpenClaw Railway Template
