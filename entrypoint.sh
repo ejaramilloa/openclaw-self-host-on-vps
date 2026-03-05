@@ -7,11 +7,4 @@ if [ ! -d /data/.linuxbrew ]; then
 fi
 rm -rf /home/linuxbrew/.linuxbrew
 ln -sfn /data/.linuxbrew /home/linuxbrew/.linuxbrew
-
-# Instalar gog si no está instalado
-export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:${PATH}"
-if ! command -v gog &> /dev/null; then
-  gosu openclaw brew install steipete/tap/gogcli
-fi
-
 exec gosu openclaw node src/server.js
